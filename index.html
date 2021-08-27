@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        @-webkit-keyframes rainbow {
+            0% { background-position: 0% 50% }
+            100% { background-position: 100% 0 }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: antiquewhite;
+            width: 100vw;
+            height: 100vh;
+        }
+        .main__h {
+            font-family: 'Rampart One', cursive;
+            background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+            background-size: 400% 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: rainbow 20s ease infinite;
+            font-size: 40px;
+            line-height: 40px;
+            animation: rainbow 6s ease infinite;
+        }
+    </style>
+    <title>Визитка</title>
+</head>
+<body>
+    <main class="main">
+        <h1 class="main__h">
+            Приношу свои извинения за невежливость, но мне кажется, что вам пора идти: я очень устал и просто не смогу дальше как следует поддерживать беседу.
+        </h1>
+    </main>
+</body>
+</html>
